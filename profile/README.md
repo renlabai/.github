@@ -20,7 +20,6 @@ Live stars + weekly growth → **[renlab.ai/labs](https://renlab.ai/labs)**
 
 - GitHub handle: `<name>-renlab-ai` preferred for new hires (not enforced retroactively).
 - Repos live under `renlabai/`. New repos go straight into the org.
-- Display names tracked in [`renlabai/labs`](https://github.com/renlabai/labs) `team.json`.
 
 ## Contact
 

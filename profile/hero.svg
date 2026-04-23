@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" width="1280" height="520" role="img" aria-label="Renlab — stealth AI lab">
+  <defs>
+    <!-- paper grain -->
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0.55   0 0 0 0 0.50   0 0 0 0 0.40   0 0 0 0.06 0"/>
+    </filter>
+    <!-- soft blue ambient orb -->
+    <radialGradient id="orb" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#6482dc" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#6482dc" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- cream paper -->
+  <rect width="1280" height="520" fill="#f3efe6"/>
+  <!-- ambient orb -->
+  <ellipse cx="760" cy="240" rx="540" ry="360" fill="url(#orb)"/>
+  <!-- grain on top -->
+  <rect width="1280" height="520" filter="url(#grain)" opacity="0.55" style="mix-blend-mode:multiply"/>
+
+  <!-- top frame: eyebrow left, brand right -->
+  <g font-family="'JetBrains Mono','Courier New',ui-monospace,monospace" font-size="12" letter-spacing="3" fill="#6e6e78">
+    <!-- brand mark (rotated square) + label -->
+    <g transform="translate(56 60)">
+      <rect x="-5" y="-5" width="10" height="10" fill="#0c0c10" transform="rotate(45)"/>
+      <text x="18" y="4" fill="#0c0c10">RENLAB · LAB/01</text>
+    </g>
+    <text x="1224" y="64" text-anchor="end">— // 2026 · EST. PACIFIC</text>
+  </g>
+
+  <!-- eyebrow with dot -->
+  <g transform="translate(56 146)">
+    <circle cx="4" cy="-4" r="4" fill="#6482dc"/>
+    <circle cx="4" cy="-4" r="8" fill="#6482dc" fill-opacity="0.18"/>
+    <text x="22" y="0" font-family="'JetBrains Mono','Courier New',monospace" font-size="12" letter-spacing="3.5" fill="#6e6e78">STEALTH · AI LAB</text>
+  </g>
+
+  <!-- headline -->
+  <g transform="translate(56 240)" font-family="'Space Grotesk','Helvetica Neue',Helvetica,Arial,sans-serif" fill="#0c0c10">
+    <text x="0" y="0" font-size="88" font-weight="400" letter-spacing="-2">Small agents.</text>
+    <text x="0" y="96" font-size="88" font-weight="400" letter-spacing="-2">
+      Sharp <tspan id="shipword">wins.</tspan>
+    </text>
+  </g>
+
+  <!-- red hand-drawn scribble under "wins" -->
+  <path d="M 318 344 C 380 352, 460 338, 536 346 S 560 352, 566 348"
+        stroke="#c6402a" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.95"/>
+
+  <!-- sub blurb -->
+  <g transform="translate(56 400)" font-family="'JetBrains Mono','Courier New',monospace" fill="#32323a">
+    <text x="0" y="0" font-size="15.5" letter-spacing="0.2">
+      <tspan font-weight="500" fill="#0c0c10">Shipping small, measurable things.</tspan>
+      <tspan dx="8" fill="#6e6e78">Public by default. No deck. No meeting.</tspan>
+    </text>
+  </g>
+
+  <!-- marginalia — caveat-like handwriting, italic Georgia with slight skew -->
+  <g transform="translate(960 168) rotate(-3)" font-family="'Caveat','Brush Script MT','Segoe Script',cursive" fill="#c6402a">
+    <text x="0" y="0" font-size="14" font-family="'JetBrains Mono',monospace" letter-spacing="1.5">→</text>
+    <text x="22" y="2" font-size="30" font-style="italic">not a bigger model</text>
+    <text x="22" y="36" font-size="30" font-style="italic">— a team that</text>
+    <text x="22" y="70" font-size="30" font-style="italic">ships.</text>
+  </g>
+
+  <!-- lab-notebook corner marks -->
+  <g stroke="#0c0c10" stroke-width="1.5" fill="none" stroke-linecap="square" opacity="0.28">
+    <path d="M 28 48 L 28 20 L 56 20"/>
+    <path d="M 1224 20 L 1252 20 L 1252 48"/>
+    <path d="M 1252 472 L 1252 500 L 1224 500"/>
+    <path d="M 56 500 L 28 500 L 28 472"/>
+  </g>
+
+  <!-- bottom sign-off rule + footer -->
+  <line x1="56" y1="462" x2="1224" y2="462" stroke="#0c0c10" stroke-opacity="0.14"/>
+  <g font-family="'JetBrains Mono','Courier New',monospace" font-size="11" letter-spacing="3" fill="#6e6e78">
+    <text x="56" y="490"><tspan fill="#0c0c10" font-weight="500">⏤ RENLAB</tspan> · 2026</text>
+    <text x="640" y="490" text-anchor="middle">RENLAB.AI  ·  LIVE STARS AT RENLAB.AI/LABS</text>
+    <text x="1224" y="490" text-anchor="end">NO DECK · NO MEETING</text>
+  </g>
+</svg>
